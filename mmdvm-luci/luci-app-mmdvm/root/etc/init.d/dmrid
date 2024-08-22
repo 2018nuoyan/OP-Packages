@@ -42,7 +42,3 @@ status() {
 
     echo "${APP}:		[${STATUS}]"
 }
-
-service_triggers() {
-      procd_add_reload_trigger "dmrid"
-}

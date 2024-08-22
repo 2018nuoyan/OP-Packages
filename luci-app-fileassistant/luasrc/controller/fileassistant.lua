@@ -2,8 +2,10 @@ module("luci.controller.fileassistant", package.seeall)
 
 function index()
 
+    entry({"admin", "system"}, firstchild(), "NAS", 44).dependent = false
+
     local page
-    page = entry({"admin", "system", "fileassistant"}, template("fileassistant"), _("文件管理"), 50)
+    page = entry({"admin", "system", "fileassistant"}, template("fileassistant"), _("文件助手"), 1)
     page.i18n = "base"
     page.dependent = true
     page.acl_depends = { "luci-app-fileassistant" }

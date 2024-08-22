@@ -30,7 +30,3 @@ stop_service() {
 	echo "gpoint not running"
    fi
 }
-
-service_triggers() {
-      procd_add_reload_trigger "gpoint"
-}

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # permission
-MIHOMO_USER="root"
+MIHOMO_USER="mihomo"
 MIHOMO_GROUP="mihomo"
 
 # routing
